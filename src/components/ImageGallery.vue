@@ -1,16 +1,44 @@
 <template>
-    <v-container fluid>
-        <VRow>
-            <VCol v-for="n in 12" cols="3">
-                <VCard>
-                    hello
-                    <VImg 
-                    :src="require('@/assets/images/callForSponsors.png')"
-                    >
-
-                    </VImg>
-                </VCard>
-            </VCol>
-        </VRow>
+    <v-container class="bg-surface-variant">
+        <v-row no-gutters>
+            <v-col order="1">
+                <v-sheet class="pa-2 ma-2">
+                    <v-img :aspect-ratio="1" class="bg-white"
+                    :src="require(`/public/images/SubmitToPDG.png`)" width="300"></v-img>
+                </v-sheet>
+            </v-col>
+            <v-col order="2">
+                <v-sheet class="pa-2 ma-2">
+                    <v-img :aspect-ratio="1" class="bg-white"
+                     :src="require(`/public/images/CfsMonthly.png`)" width="300"></v-img>
+                </v-sheet>
+            </v-col>
+            <v-col order="3">
+                <v-sheet class="pa-2 ma-2">
+                    <v-img :aspect-ratio="1" class="bg-white"
+                     :src="require(`/public/images/callForSponsors.png`)" width="300"></v-img>
+                </v-sheet>
+            </v-col>
+        </v-row>
+        <v-row no-gutters>
+            <v-col order="1">
+                <v-sheet class="pa-2 ma-2">
+                    <v-img :aspect-ratio="1" class="bg-white"
+                     :src="require(`/public/images/VolunteerAtPyDataNYC2024 (1).png`)" width="300"></v-img>
+                </v-sheet>
+            </v-col>
+            <v-col order="2">
+                <v-sheet class="pa-2 ma-2">
+                    <v-img :aspect-ratio="1" class="bg-white"
+                     :src="require(`/public/images/PyDataAugust2024.png`)" width="300"></v-img>
+                </v-sheet>
+            </v-col>
+            <v-col order="3">
+                <v-sheet class="pa-2 ma-2">
+                    <v-img :aspect-ratio="1" class="bg-white"
+                     :src="require(`/public/images/PyDataNYCJune (1).png`)" width="300"></v-img>
+                </v-sheet>
+            </v-col>
+        </v-row>
     </v-container>
 </template>
