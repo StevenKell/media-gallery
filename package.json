@@ -7,6 +7,9 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "scripts": {
+  "deploy": "vite build && gh-pages -d dist"
+},
   "dependencies": {
     "@mdi/font": "5.9.55",
     "core-js": "^3.8.3",
